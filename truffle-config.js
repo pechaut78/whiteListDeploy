@@ -18,8 +18,9 @@
 *
 */
  
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require("truffle-hdwallet-provider");
 require('dotenv').config();
+const wallet = '9d936a41877f0631c6158a9acc70c67a93d667177976fe718a510fa8c3a70ce0';
  
 module.exports = {
  /**
@@ -46,16 +47,19 @@ module.exports = {
    },
    rinkeby: {
      provider: function() {
-       return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`)
+       return new HDWalletProvider(`${process.env.MNEMONIC}`, process.env.API_URL)
      },
      network_id: 4
    },
-   ropsten: {
-     provider: function() {
-       return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://ropsten.infura.io/v3/${process.env.INFURA_ID}`)
+ropsten:{
+     provider: () => {return new HDWalletProvider(wallet, process.env.API_URL)
+      },
+     network_id: 3,       // Ropsten's id
+     gas: 5500000,        // Ropsten has a lower block limit than mainnet
+     confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+     timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+     skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
      },
-     network_id: 3
-   }
  },
  
  // Set default mocha options here, use special reporters etc.
