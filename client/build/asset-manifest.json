@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/whiteListDeploy/static/css/main.35b04435.chunk.css",
+    "main.js": "/whiteListDeploy/static/js/main.b720b65b.chunk.js",
+    "main.js.map": "/whiteListDeploy/static/js/main.b720b65b.chunk.js.map",
+    "runtime-main.js": "/whiteListDeploy/static/js/runtime-main.b6403984.js",
+    "runtime-main.js.map": "/whiteListDeploy/static/js/runtime-main.b6403984.js.map",
+    "static/css/2.d6008dad.chunk.css": "/whiteListDeploy/static/css/2.d6008dad.chunk.css",
+    "static/js/2.00460df6.chunk.js": "/whiteListDeploy/static/js/2.00460df6.chunk.js",
+    "static/js/2.00460df6.chunk.js.map": "/whiteListDeploy/static/js/2.00460df6.chunk.js.map",
+    "index.html": "/whiteListDeploy/index.html",
+    "static/css/2.d6008dad.chunk.css.map": "/whiteListDeploy/static/css/2.d6008dad.chunk.css.map",
+    "static/css/main.35b04435.chunk.css.map": "/whiteListDeploy/static/css/main.35b04435.chunk.css.map",
+    "static/js/2.00460df6.chunk.js.LICENSE.txt": "/whiteListDeploy/static/js/2.00460df6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6403984.js",
+    "static/css/2.d6008dad.chunk.css",
+    "static/js/2.00460df6.chunk.js",
+    "static/css/main.35b04435.chunk.css",
+    "static/js/main.b720b65b.chunk.js"
+  ]
+}
